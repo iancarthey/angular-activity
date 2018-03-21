@@ -9,10 +9,11 @@
     <script src="scripts/client.js"></script>
 </head>
 <body ng-app="myApp">
-    <div>
+    <div ng-controller="activityController as vm">
         <h1>30 min angular activity!</h1>
         <input ng-model="intro" type="text" />
         {{intro}}
+        {{vm.greeting}}
     </div>
 </body>
 </html>
